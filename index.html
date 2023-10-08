@@ -4,16 +4,24 @@
 -->
 <html lang="en">
 <head>
-	<title>Nick Paugys</title>
+	<title>Nick Paugys' Getting to Know Each Other</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="getting-to-know-each-other.css">
+	<script>
+		alert("You are about to view Nick Paugys' personal HTML page. Click OK if you wish to see the site.");
+	</script>
 </head>
 <body>
 	<h1>Nicholas Paugys</h1>
+	<p id="test">Call me Nick.</p>
+	<button type="button" onclick="document.getElementById('test').style.fontFamily='Impact,Charcoal,sans-serif'">Click to change font</button>
 	<!--
 		figure out how to align the picture to the right of all of the text as opposed to somewhere at the bottom
 	-->
-	<h2>Call me Nick.</h2>
+	<script>
+		let date = new Date();
+		document.body.innerHTML = "<h3>Today's date is " + date + "</h3>"
+	</script>
 	<a href="mailto:nicholaspaugys@lewisu.edu">nicholaspaugys@lewisu.edu</a>
 	<p>Add me on Discord at nickpaugys</p>
 	<h3>Introduction</h3>
@@ -34,7 +42,13 @@
 		with your brothers is so fun and has the capability to build rock-solid friendships.
 	</p>
 	<h3>Fun Fact!</h3>
-	<p>I'm actually a triplet! My triplet sister Victoria attends Lewis and my triplet brother attends Taylor University in Indiana.</p>
+	<p id="demo">I'm actually a triplet! My triplet sister Victoria attends Lewis and my triplet brother attends Taylor University in Indiana</p>
+	<button type="button" onclick="change()">Click to see another fun fact!</button>
+	<script>
+		function change() {
+			document.getElementById("demo").innerHTML = "I also have stepsiblings who are twins!! How cool is that?";
+		}
+	</script>
 	<img src="headandshoulders.jpg" alt="Me excited to go to Lewis!" class="center" style="width: 350px;">
 	<h3>Greatest Innovations</h3>
 	<ul style="list-style-type: square;">
